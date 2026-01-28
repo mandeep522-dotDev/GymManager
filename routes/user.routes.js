@@ -23,7 +23,7 @@ router.route("/logout").post(verifyJWT, logoutUser);
 router.route("/refresh-token").post(refresAccessToken);
 router.route("/change-password").post(verifyJWT, changeCurrentPassword);
 router.route("/current-user").get(verifyJWT, getCurrentUser);
-router.route("/updeat-details").patch(verifyJWT, updeateUserDetails);
+router.route("/update-details").patch(verifyJWT, updeateUserDetails);
 router.route("/all-users").get(verifyJWT, AdminOnly, getAllUsers);
 router.route("/delete/:id").delete(verifyJWT, AdminOnly, deleteUser);
 
